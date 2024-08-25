@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Installation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/installation-background.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            backdrop-filter: blur(5px);
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 700px;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        .form-container h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group .file-input {
+            padding: 0;
+        }
+        .file-input input {
+            padding: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .form-footer {
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Project Installation Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="ceo-name">Name of the Person Registered CEO of the Business:</label>
+                <input type="text" id="ceo-name" name="ceo-name" required>
+            </div>
+            <div class="form-group">
+                <label for="personal-address">Personal Address of the Person Registering the Business:</label>
+                <input type="text" id="personal-address" name="personal-address" required>
+            </div>
+            <div class="form-group">
+                <label for="business-address">Business Address (if not provided by Cybermonk Ltd.):</label>
+                <input type="text" id="business-address" name="business-address">
+            </div>
+            <div class="form-group">
+                <label for="registered-address">Registered Companies House Business Address:</label>
+                <input type="text" id="registered-address" name="registered-address" required>
+            </div>
+            <div class="form-group">
+                <label for="previous-addresses">Three Years of Previous Addresses:</label>
+                <textarea id="previous-addresses" name="previous-addresses" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="business-name">What is the Name of the Business?</label>
+                <input type="text" id="business-name" name="business-name" required>
+            </div>
+            <div class="form-group">
+                <label for="business-industry">Business Industry:</label>
+                <input type="text" id="business-industry" name="business-industry" required>
+            </div>
+            <div class="form-group">
+                <label for="competitor-websites">Competitor Websites or Websites You Admire:</label>
+                <textarea id="competitor-websites" name="competitor-websites" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="target-audience">Target Audience (Age group, location, interests):</label>
+                <textarea id="target-audience" name="target-audience" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="social-media">Social Media Links:</label>
+                <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/yourusername">
+                <input type="url" id="facebook" name="facebook" placeholder="https://facebook.com/yourusername">
+            </div>
+            <div class="form-group">
+                <label for="preferred-features">Preferred Website Features (e.g., contact forms, live chat):</label>
+                <textarea id="preferred-features" name="preferred-features" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="branding-assets">Logo and Branding Assets (Upload if available):</label>
+                <input type="file" id="branding-assets" name="branding-assets" accept="image/*,application/pdf">
+            </div>
+            <div class="form-group">
+                <label for="seo-preferences">SEO Keywords or Preferences:</label>
+                <textarea id="seo-preferences" name="seo-preferences" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="launch-timeline">Preferred Launch Timeline:</label>
+                <input type="text" id="launch-timeline" name="launch-timeline" placeholder="e.g., By December 2024">
+            </div>
+            <div class="form-group">
+                <label for="business-description">Describe Your Business (to help us get the mood and effect of the website correct):</label>
+                <textarea id="business-description" name="business-description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="desired-url">What Would You Ideally Like the URL (Website Address) to Be?</label>
+                <input type="text" id="desired-url" name="desired-url" required>
+            </div>
+            <div class="form-group">
+                <label for="business-intro">Write a 500-2000 Word Description Introduction to the Business:</label>
+                <textarea id="business-intro" name="business-intro" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="about-you">Write a 500-2000 Word Description for the "About You" Section (How and Why):</label>
+                <textarea id="about-you" name="about-you" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="colors-theme">Pick Some Favourite Colours or Theme You Came to When Opening the Business:</label>
+                <input type="text" id="colors-theme" name="colors-theme" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-number">Add the Contact Number Which You Wish Your Clients to Reach You On:</label>
+                <input type="tel" id="contact-number" name="contact-number" required>
+            </div>
+            <div class="form-group">
+                <label for="store-location">Add an Address for Your Store Location (if applicable):</label>
+                <input type="text" id="store-location" name="store-location">
+            </div>
+            <div class="form-group file-input">
+                <label for="item-pictures">Upload 1-10 Pictures of Items You Would Like to Put on the Website:</label>
+                <input type="file" id="item-pictures" name="item-pictures" accept="image/*" multiple required>
+            </div>
+            <div class="form-group">
+                <label for="photo-editing">Would You Like Us to Edit These Photos?</label>
+                <select id="photo-editing" name="photo-editing" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nid-photo">Upload National ID Photo:</label>
+                <input type="file" id="nid-photo" name="nid-photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" name="card-name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="security-number">Security Number (CVV):</label>
+                <input type="text" id="security-number" name="security-number" required>
+            </div>
+            <div class="form-group">
+                <label for="deposit">Deposit (Pay Now):</label>
+                <input type="text" id="deposit" name="deposit" placeholder="£" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="form-footer">
+            <p>Direct Debit Form:</p>
+            <p>Please ensure all details are correct before submitting. Your information is securely processed.</p>
+        </div>
+    </div>
+</body>
+</html>

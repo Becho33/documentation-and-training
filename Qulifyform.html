@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualifying Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/qualifying-background.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            backdrop-filter: blur(5px);
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        .form-container h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #555;
+            margin-bottom: 8px;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-group div {
+            margin-bottom: 10px;
+        }
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Qualifying Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username" required>
+            </div>
+            <div class="form-group">
+                <label for="instagram">Instagram Address:</label>
+                <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/yourusername" required>
+            </div>
+            <div class="form-group">
+                <label for="facebook">Facebook Address:</label>
+                <input type="url" id="facebook" name="facebook" placeholder="https://facebook.com/yourusername" required>
+            </div>
+            <div class="form-group">
+                <label for="employment-status">Employment Status:</label>
+                <select id="employment-status" name="employment-status" required>
+                    <option value="" disabled selected>Select your status</option>
+                    <option value="employed">Employed</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                    <option value="retired">Retired</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="annual-income">Personal Annual Income:</label>
+                <input type="number" id="annual-income" name="annual-income" placeholder="£" required>
+            </div>
+            <div class="form-group">
+                <label for="turnover">Current Business Turnover (if applicable):</label>
+                <input type="number" id="turnover" name="turnover" placeholder="£">
+            </div>
+            <div class="form-group">
+                <label for="afford">On the premise that the service is of good quality, can you afford a fee of £500+?</label>
+                <select id="afford" name="afford" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="need-more-info">I need more information</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="services">What services do you require? (Check all that apply):</label>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="register-company" name="services" value="Register Company" checked>
+                        <label for="register-company">Registration of the Company (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="register-url" name="services" value="Register URL" checked>
+                        <label for="register-url">Register a URL (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="setup-email" name="services" value="Setup Email" checked>
+                        <label for="setup-email">Set Up an Official Email Account (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="design-logo" name="services" value="Design Logo" checked>
+                        <label for="design-logo">Design a Logo (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="setup-shop" name="services" value="Setup Shop" checked>
+                        <label for="setup-shop">Set Up an Online Shop (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="setup-merchant" name="services" value="Setup Merchant Account" checked>
+                        <label for="setup-merchant">Set Up a Merchant Trader Account (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="copywriting" name="services" value="Copywriting" checked>
+                        <label for="copywriting">Copywriting for the Website (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="concept-design" name="services" value="Concept Design" checked>
+                        <label for="concept-design">Concept Design (Blueprint) (Included in the price)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="registered-address" name="services" value="Registered Address">
+                        <label for="registered-address">Official UK Registered Address (£40/month)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="redirection-service" name="services" value="Redirection Service">
+                        <label for="redirection-service">Redirection Service to the UK (£5/month, International: £50)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="business-email" name="services" value="Business Email">
+                        <label for="business-email">Official Business Email with Your URL (Price not provided)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ebook-writing" name="services" value="Ebook Writing">
+                        <label for="ebook-writing">Writing and Publishing an Ebook for Clients to Sell on Their Website (£100 plus 20% royalties)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="fashion-design" name="services" value="Fashion Design">
+                        <label for="fashion-design">Fashion Design Drawing (Pre-Production) (£200 per design)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="clothing-range" name="services" value="Clothing Range">
+                        <label for="clothing-range">Clothing Range (Price on request)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="networking" name="services" value="Networking">
+                        <label for="networking">Professional Introductions and Networking (£75 per meeting arranged)</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
